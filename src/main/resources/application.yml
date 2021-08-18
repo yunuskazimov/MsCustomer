@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    username: postgres
+    password: Pass2021
+    url: jdbc:postgresql://yk-pc-l-1:5432/customer
+  jpa:
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+  rabbitmq:
+    addresses: yk-pc-l-1:5672
+server:
+ port: 8095
+
+ clinet:
+   customer:
+     url: https://www.google.az
