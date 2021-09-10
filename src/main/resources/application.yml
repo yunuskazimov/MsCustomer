@@ -1,17 +1,15 @@
 spring:
   datasource:
     username: postgres
-    password: Pass2021
-    url: jdbc:postgresql://yk-pc-l-1:5432/customer
+    password: bHa8Hn9OBm
+    url: jdbc:postgresql://y-postgres-postgresql.development.svc.cluster.local:5432/account
   jpa:
     hibernate:
       ddl-auto: update
     generate-ddl: true
+    properties:
+      dialect: org.hibernate.dialect.PostgreSQLDialect
   rabbitmq:
-    addresses: yk-pc-l-1:5672
+    addresses: rabbit-rabbitmq.development.svc.cluster.local:5672
 server:
  port: 8095
-
- clinet:
-   customer:
-     url: https://www.google.az
